@@ -10,6 +10,13 @@
 
     <title>Optify - Contact Us</title>
 
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="assets/logo/optify-icon.png">
+    <link rel="apple-touch-icon" href="assets/logo/optify-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/logo/optify-icon.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/logo/optify-icon.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/logo/optify-icon.png">
+
     <!-- Raleway font -->
     <link rel="stylesheet" type="text/css" href="css/raleway.css" />
 
@@ -28,8 +35,32 @@
 
   <body>
 
+    <!-- Mobile Menu -->
+    <nav class="navbar navbar-default for-mobile">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#"><img src="assets/logo/optify-logo.png"></a>
+
+          <div class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="index.html#hotspot">Hotspots</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="index.html#business">For Business</a></li>
+            <li><a class="active" href="contact.html">Contacts</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div><!--/.container-fluid -->
+    </nav>
+
     <!-- Navigation -->
-    <nav class="navbar navbar-light bg-light static-top menu-top-big-screen">
+    <nav class="navbar navbar-light bg-light static-top menu-top-big-screen for-desktop">
       <div class="container">
         <a class="nav-links" href="index.html#hotspot">Hotspots</a>
         <a class="nav-links" href="about.html">About</a>
@@ -139,6 +170,12 @@
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <script type="text/javascript" src="js/preloader.js"></script>
+
+    <script type="text/javascript">
+    function myFunction(x) {
+        x.classList.toggle("change");
+    }
+    </script>
 
   </body>
 
