@@ -30,6 +30,9 @@
     <!-- Custom styles for this template -->
     <link href="css/landing-page.css" rel="stylesheet">
 
+    <!-- Popup responsive -->
+    <link href="css/popup-responsive.css" rel="stylesheet">
+
   </head>
 
   <body>
@@ -70,7 +73,7 @@
     </nav>
 
     <!-- Masthead / Map -->
-    <header class="masthead text-white text-center" id="map">
+    <header class="masthead text-white text-center" id="myMap">
       <div class="overlay"></div>
       <div class="container">
         <div class="row">
@@ -207,7 +210,7 @@
             <div class="features-icons-item mx-auto mb-0 mb-lg-3">
               <p>To get optify for your buisness contact us</p>
               <br/>
-              <button class="btn btn-default btn-optify margin-top-minus">Contact Us</button>
+              <a href="contact.html"><button class="btn btn-default btn-optify margin-top-minus">Contact Us</button></a>
             </div>
           </div>
         </div>
@@ -285,26 +288,72 @@
 
     function myMap() {
 
-      var locations = [
-          ['Arts Council of Pakistan', 24.852999, 67.021015, 16],
-          ['LuckyOne Mall', 24.932297, 67.087807, 15],
-          ['Dolmen Mall Tariq Road', 24.876857, 67.062809, 14],
-          ['Dolmen Mall Hyderi', 24.935676, 67.040728, 13],
-          ['Chai Wala', 24.786991, 67.056909, 12],
-          ['Street Kitchen', 24.787847, 67.057681, 11],
-          ['Bahadur Shah Zafar Road', 24.882959, 67.067765, 10],
-          ['Caboki in Karachi', 24.823966, 67.036636, 9],
-          ['Timberland', 24.802457, 67.030194, 8],
-          ['Gulshan 13-B', 24.906642, 67.078817, 7],
-          ['Johar Branch, Block 11', 24.920728, 67.135112, 6],
-          ['Nazimabad Branch, Block-B', 24.926161, 67.039624, 5],
-          ['Rashid Minhas Branch, Block 10 A', 24.910425, 67.106220, 4],
-          ['Head Office branch - Tipu Sultan Rd', 24.865715, 67.078121, 3],
-          ['Marine Branch, Block 8', 24.831609, 67.036460, 2],
-          ['Atrium Mall Branch, Saddar', 24.859648, 67.031311, 1]
+      var locations_karachi = [
+          ['Arts Council of Pakistan', 24.852999, 67.021015, 27],
+          ['LuckyOne Mall', 24.932297, 67.087807, 26],
+          ['Dolmen Mall Tariq Road', 24.876857, 67.062809, 25],
+          ['Dolmen Mall Hyderi', 24.935676, 67.040728, 24],
+          ['Chai Wala', 24.786991, 67.056909, 23],
+          ['Street Kitchen', 24.787847, 67.057681, 22],
+          ['Bahadur Shah Zafar Road', 24.882959, 67.067765, 21],
+          ['Caboki in Karachi', 24.823966, 67.036636, 20],
+          ['Timberland', 24.802457, 67.030194, 19],
+          ['Gulshan 13-B', 24.906642, 67.078817, 18],
+          ['Johar Branch, Block 11', 24.920728, 67.135112, 17],
+          ['Nazimabad Branch, Block-B', 24.926161, 67.039624, 16],
+          ['Rashid Minhas Branch, Block 10 A', 24.910425, 67.106220, 15],
+          ['Head Office branch - Tipu Sultan Rd', 24.865715, 67.078121, 14],
+          ['Marine Branch, Block 8', 24.831609, 67.036460, 13],
+          ['Atrium Mall Branch, Saddar', 24.859648, 67.031311, 12],
+          ['Ziauddin Branch', 24.812775, 67.015817, 11],
+          ['Karsaz Branch, Karsaz Service Rd E', 24.884087, 67.090504, 10],
+          ['DHA Phase 2 Branch', 24.843301, 67.057174, 9],
+          ['DHA Phase 2 Branch', 24.843301, 67.057174, 8],
+          ['Hyperstar Clifton', 24.801972, 67.031305, 7],
+          ['NMC', 24.846914, 67.056546, 6],
+          ['South City Hospital', 24.814212, 67.022914, 5],
+          ['Chenone Park towers', 24.814342, 67.027848, 4],
+          ['Chenone Tariq Road', 24.877254, 67.063466, 3],
+          ['Chenone Luckyone', 24.932136, 67.087663, 2],
+          ['Arena Family Recreational Park', 24.887888, 67.090450, 1] //27
       ];
 
-        var map = new google.maps.Map(document.getElementById('map'), {
+      var locations_lahore = [
+          ['Emporium Mall Lahore', 31.467505, 74.266092, 3],
+          ['Chenone Gulberg', 24.786991, 67.056909, 2],
+          ['Chenone DHA Lahore', 31.472038, 74.377424, 1] //3
+      ];
+
+      var locations_rawalpindi = [
+          ['Chenone Adamjee Rd Rawalpindi', 33.594595, 73.056446, 1] //1
+      ];
+
+      var locations_gujranwala = [
+          ['Chenone Gujranwala', 32.592372, 74.080146, 1] //1
+      ];
+
+      var locations_sialkot = [
+          ['Chenone Sialkot', 32.514704, 74.574994, 1] //1
+      ];
+
+      var locations_faisalabad = [
+          ['Chenone Faislabad', 31.411863, 73.105912, 1] //1
+      ];
+
+      var locations_islamabad = [
+          ['Chenone Islamabad', 33.722536, 73.060512, 1] //1
+      ];
+
+      var locations_peshawar = [
+          ['Chenone Peshawar', 34.003383, 71.545789, 1],
+          ['Chenone Uni Rd Peshawar', 34.004758, 71.545848, 1] //1
+      ];
+
+      var locations_hyderabad = [
+          ['Chenone Hyderabad', 25.377144, 68.338694, 1] //1
+      ];
+
+        var map = new google.maps.Map(document.getElementById('myMap'), {
           zoom: 11,
           center: new google.maps.LatLng(24.852999, 67.021015),
           mapTypeId: google.maps.MapTypeId.ROADMAP,
@@ -550,15 +599,15 @@
         var marker, i;
 
         var icon = {
-            url: "assets/logo/optify-animated-logo.gif", // url
+            url: "assets/logo/optify-animated-logo.png", // url
             scaledSize: new google.maps.Size(20, 20), // scaled size
             origin: new google.maps.Point(0,0), // origin
             anchor: new google.maps.Point(0, 0) // anchor
         };
 
-        for (i = 0; i < locations.length; i++) {
+        for (i = 0; i < locations_karachi.length; i++) {
           marker = new google.maps.Marker({
-            position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+            position: new google.maps.LatLng(locations_karachi[i][1], locations_karachi[i][2]),
             map: map,
             icon: icon,
             label: {color: "black"}
@@ -566,7 +615,7 @@
 
         google.maps.event.addListener(marker, 'click', (function(marker, i) {
           return function() {
-            infowindow.setContent(locations[i][0]);
+            infowindow.setContent(locations_karachi[i][0]);
             infowindow.open(map, marker);
           }
         })(marker, i));
@@ -591,16 +640,16 @@
         <div class="modal-content">
           <div class="modal-body">
           <div class="container no-spaces">
-            <div class="row">
-              <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 border-right">
+            <div class="row blue-bg-row">
+              <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 border-right white-bg">
                   <img src="assets/icons/restaurants.png" class="img-responsive modal-img" />
               </div>
-              <div class="col-md-8 col-lg-48 col-sm-12 col-xs-12 blue-bg">
+              <div class="col-md-8 col-lg-8 col-sm-12 col-xs-12 blue-bg">
                   <button type="button" class="close" data-dismiss="modal">&times;</button>
                   <h3 class="white-text">Wi-Fi for Restaurants and Cafes</h3>
-                  <p>One of the first things people do when they enter a restaurant or a café is to ask for wifi password. The need to stay connected enhances when people are in the premises of an eating space. We will help you build up a strong Wi-Fi network so your customer experience develops your goodwill further.</p>
-                  <h5>Key Benefits</h5>
-                  <ul>
+                  <p class="white-text">One of the first things people do when they enter a restaurant or a café is to ask for wifi password. The need to stay connected enhances when people are in the premises of an eating space. We will help you build up a strong Wi-Fi network so your customer experience develops your goodwill further.</p>
+                  <h5 class="white-text">Key Benefits</h5>
+                  <ul class="white-text">
                     <li>Good Wi-Fi means happy customers</li>
                     <li>They’ll make themselves at home —staying longer and spending more</li>
                     <li>Share special offers and promote your brand</li>
@@ -617,19 +666,33 @@
 
     <!-- Modal Outlet -->
     <div id="outlet" class="modal fade" role="dialog">
-      <div class="modal-dialog">
+      <div class="modal-dialog modal-lg">
 
         <!-- Modal content-->
         <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-          </div>
           <div class="modal-body">
-            <p>Retail is the place which attracts maximum customers. With Pakistan’s retail market being the fastest growing in the world it is indispensable for you as retailers to have premium Wi-Fi services to back your products and services.</p>
-            <p>Wi-fi means a much higher footfall</p>
-            <p>Customers are much more likely to visit again</p>
-            <p>Share promotional offers direct</p>
-            <p>Gain insight into their shopping habits</p>
+          <div class="container no-spaces">
+            <div class="row blue-bg-row">
+              <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 border-right white-bg">
+                  <img src="assets/icons/retail-outlets.png" class="img-responsive modal-img" />
+              </div>
+              <div class="col-md-8 col-lg-8 col-sm-12 col-xs-12 blue-bg">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                  <h3 class="white-text">Wi-Fi for Retail and Department Stores</h3>
+                  <p class="white-text">Retail is the place which attracts maximum customers. With Pakistan’s retail market being the fastest growing in the world it is indispensable for you as retailers to have premium Wi-Fi services to back your products and services.</p>
+
+                  <h5 class="white-text">Key Benefits</h5>
+                  <ul class="white-text">
+                    <li>Wi-fi means a much higher footfall</li>
+                    <li>Customers are much more likely to visit again</li>
+                    <li>Share promotional offers direct</li>
+                    <li>Gain insight into their shopping habits</li>
+                  </ul>
+
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -638,18 +701,26 @@
 
     <!-- Modal Airport -->
     <div id="airport" class="modal fade" role="dialog">
-      <div class="modal-dialog">
+      <div class="modal-dialog modal-lg">
 
         <!-- Modal content-->
         <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-          </div>
           <div class="modal-body">
-            <p>At stations and airports, people are on the go, departure time might be looming — they need information fast. This is where wi-fi can save the day, providing a simple way of finding much needed info to make sure they stay en route.</p>
-            <p>Travellers can keep in touch on the move</p>
-            <p>They can work flexibly and make the most of time between meetings</p>
-            <p>Customers can check in online and access their travel documents</p>
+          <div class="container no-spaces">
+            <div class="row blue-bg-row">
+              <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 border-right white-bg">
+                  <img src="assets/icons/airport.png" class="img-responsive modal-img" />
+              </div>
+              <div class="col-md-8 col-lg-8 col-sm-12 col-xs-12 blue-bg">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h3 class="white-text">Wi-Fi for Travel Lounges and Railway Stations</h3>
+                  <p class="white-text">At stations and airports, people are on the go, departure time might be looming — they need information fast. This is where wi-fi can save the day, providing a simple way of finding much needed info to make sure they stay en route.</p>
+                  <p class="white-text">Travellers can keep in touch on the move</p>
+                  <p class="white-text">They can work flexibly and make the most of time between meetings</p>
+                  <p class="white-text">Customers can check in online and access their travel documents</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -658,15 +729,29 @@
 
     <!-- Modal Railway -->
     <div id="railway" class="modal fade" role="dialog">
-      <div class="modal-dialog">
+      <div class="modal-dialog modal-lg">
 
         <!-- Modal content-->
         <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-          </div>
           <div class="modal-body">
-            <p>Some text in the modal.</p>
+          <div class="container no-spaces">
+            <div class="row blue-bg-row">
+              <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 border-right white-bg">
+                  <img src="assets/icons/railway-stations.png" class="img-responsive modal-img" />
+              </div>
+              <div class="col-md-8 col-lg-8 col-sm-12 col-xs-12 blue-bg">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h3 class="white-text">Wi-Fi for Travel Lounges and Railway Stations</h3>
+                  <p class="white-text">At stations and airports, people are on the go, departure time might be looming — they need information fast. This is where wi-fi can save the day, providing a simple way of finding much needed info to make sure they stay en route.</p>
+                  <h5 class="white-text">Key Benefits</h5>
+                  <ul class="white-text">
+                    <li>Travellers can keep in touch on the move</li>
+                    <li>They can work flexibly and make the most of time between meetings</li>
+                    <li>Customers can check in online and access their travel documents</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -675,15 +760,23 @@
 
     <!-- Modal Parks -->
     <div id="parks" class="modal fade" role="dialog">
-      <div class="modal-dialog">
+      <div class="modal-dialog modal-lg">
 
         <!-- Modal content-->
         <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-          </div>
           <div class="modal-body">
-            <p>Some text in the modal.</p>
+          <div class="container no-spaces">
+            <div class="row blue-bg-row">
+              <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 border-right white-bg">
+                  <img src="assets/icons/parks.png" class="img-responsive modal-img" />
+              </div>
+              <div class="col-md-8 col-lg-8 col-sm-12 col-xs-12 blue-bg">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h3 class="white-text">Wi-Fi for Parks</h3>
+                  <p class="white-text">Some text in the modal.</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -692,15 +785,23 @@
 
     <!-- Modal Mall -->
     <div id="mall" class="modal fade" role="dialog">
-      <div class="modal-dialog">
+      <div class="modal-dialog modal-lg">
 
         <!-- Modal content-->
         <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-          </div>
           <div class="modal-body">
-            <p>Some text in the modal.</p>
+          <div class="container no-spaces">
+            <div class="row blue-bg-row">
+              <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 border-right white-bg">
+                  <img src="assets/icons/shopping-malls.png" class="img-responsive modal-img" />
+              </div>
+              <div class="col-md-8 col-lg-8 col-sm-12 col-xs-12 blue-bg">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h3 class="white-text">Wi-Fi for Shopping Malls</h3>
+                  <p class="white-text">Some text in the modal.</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -709,15 +810,23 @@
 
     <!-- Modal Outdoor -->
     <div id="outdoor" class="modal fade" role="dialog">
-      <div class="modal-dialog">
+      <div class="modal-dialog modal-lg">
 
         <!-- Modal content-->
         <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-          </div>
           <div class="modal-body">
-            <p>Some text in the modal.</p>
+          <div class="container no-spaces">
+            <div class="row blue-bg-row">
+              <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 border-right white-bg">
+                  <img src="assets/icons/outdoor-events.png" class="img-responsive modal-img" />
+              </div>
+              <div class="col-md-8 col-lg-8 col-sm-12 col-xs-12 blue-bg">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h3 class="white-text">Wi-Fi for Outdoor</h3>
+                  <p class="white-text">Some text in the modal.</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -726,15 +835,23 @@
 
     <!-- Modal Banquet -->
     <div id="banquet" class="modal fade" role="dialog">
-      <div class="modal-dialog">
+      <div class="modal-dialog modal-lg">
 
         <!-- Modal content-->
         <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-          </div>
           <div class="modal-body">
-            <p>Some text in the modal.</p>
+          <div class="container no-spaces">
+            <div class="row blue-bg-row">
+              <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 border-right white-bg">
+                  <img src="assets/icons/banquet-hall.png" class="img-responsive modal-img" />
+              </div>
+              <div class="col-md-8 col-lg-8 col-sm-12 col-xs-12 blue-bg">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h3 class="white-text">Wi-Fi for Banquets</h3>
+                  <p class="white-text">Some text in the modal.</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -743,20 +860,31 @@
 
     <!-- Modal Clubs -->
     <div id="clubs" class="modal fade" role="dialog">
-      <div class="modal-dialog">
+      <div class="modal-dialog modal-lg">
 
         <!-- Modal content-->
         <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-          </div>
           <div class="modal-body">
-            <h1>Public Spaces / Clubs</h1>
-            <p>Our lives are driven by connectivity these days. People are in continuous pursuit of a stable Wi-Fi connection so they are online all the time. We make this possible with Optify.</p>
-            <h1>Key Benefits</h1>
-            <p>Gives the general public an opportunity to get online</p>
-            <p>Benefits tourism by attracting more visitors to the tourist areas</p>
-            <p>Build goodwill amongst the citizens on behalf of the public authority</p>
+          <div class="container no-spaces">
+            <div class="row blue-bg-row">
+              <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 border-right white-bg">
+                  <img src="assets/icons/public-spaces.png" class="img-responsive modal-img" />
+              </div>
+              <div class="col-md-8 col-lg-8 col-sm-12 col-xs-12 blue-bg">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                  <h3 class="white-text">Wi-Fi for Public Spaces</h3>
+                  <p class="white-text">Our lives are driven by connectivity these days. People are in continuous pursuit of a stable Wi-Fi connection so they are online all the time. We make this possible with Optify.</p>
+
+                  <h5 class="white-text">Key Benefits</h5>
+                  <ul class="white-text">
+                    <li>Gives the general public an opportunity to get online</li>
+                    <li>Benefits tourism by attracting more visitors to the tourist areas</li>
+                    <li>Build goodwill amongst the citizens on behalf of the public authority</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -765,15 +893,23 @@
 
     <!-- Modal Transportation -->
     <div id="transportation" class="modal fade" role="dialog">
-      <div class="modal-dialog">
+      <div class="modal-dialog modal-lg">
 
         <!-- Modal content-->
         <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-          </div>
           <div class="modal-body">
-            <p>Some text in the modal.</p>
+          <div class="container no-spaces">
+            <div class="row blue-bg-row">
+              <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 border-right white-bg">
+                  <img src="assets/icons/transportation.png" class="img-responsive modal-img" />
+              </div>
+              <div class="col-md-8 col-lg-8 col-sm-12 col-xs-12 blue-bg">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h3 class="white-text">Wi-Fi for Transportation</h3>
+                  <p class="white-text">Some text in the modal.</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -782,18 +918,32 @@
 
     <!-- Modal Hotels -->
     <div id="hotels" class="modal fade" role="dialog">
-      <div class="modal-dialog">
+      <div class="modal-dialog modal-lg">
 
         <!-- Modal content-->
         <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-          </div>
           <div class="modal-body">
-            <p>Premium Wi-Fi services across hotel premises is a tough job. However, optify has got it covered due to its extensive experience in wifi deployments across Pakistan. When you sign up with Optify you enhance your guests experience by offering them swift wi-Fi services.</p>
-            <p>Good Wi-Fi coverage leads to happy guest experience</p>
-            <p>It’s a must for conferences and events</p>
-            <p>Get to know your guests more with real data</p>
+          <div class="container no-spaces">
+            <div class="row blue-bg-row">
+              <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 border-right white-bg">
+                  <img src="assets/icons/hotels.png" class="img-responsive modal-img" />
+              </div>
+              <div class="col-md-8 col-lg-8 col-sm-12 col-xs-12 blue-bg">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                  <h3 class="white-text">Wi-Fi for Hotels and Guest Houses</h3>
+                  <p class="white-text">Premium Wi-Fi services across hotel premises is a tough job. However, optify has got it covered due to its extensive experience in wifi deployments across Pakistan. When you sign up with Optify you enhance your guests experience by offering them swift wi-Fi services.</p>
+
+                  <h5 class="white-text">Key Benefits</h5>
+                  <ul class="white-text">
+                    <li>Good Wi-Fi coverage leads to happy guest experience</li>
+                    <li>It’s a must for conferences and events</li>
+                    <li>Get to know your guests more with real data</li>
+                  </ul>
+
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -802,15 +952,23 @@
 
     <!-- Modal University -->
     <div id="university" class="modal fade" role="dialog">
-      <div class="modal-dialog">
+      <div class="modal-dialog modal-lg">
 
         <!-- Modal content-->
         <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-          </div>
           <div class="modal-body">
-            <p>Some text in the modal.</p>
+          <div class="container no-spaces">
+            <div class="row blue-bg-row">
+              <div class="col-md-4 col-lg-4 col-sm-12 col-xs-12 border-right white-bg">
+                  <img src="assets/icons/university.png" class="img-responsive modal-img" />
+              </div>
+              <div class="col-md-8 col-lg-8 col-sm-12 col-xs-12 blue-bg">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <h3 class="white-text">Wi-Fi for Universities</h3>
+                  <p class="white-text">Some text in the modal.</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 

@@ -1,0 +1,995 @@
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+
+	.border-right {
+	  border-right: 2px solid lightgrey;
+	}
+
+	.blue-bg {
+	  background-color: #3875B2;
+	  border-radius: 0rem 1.3rem 1.3rem 0rem;
+	}
+
+	.blue-bg-row {
+	  background-color: #3875B2;
+	  border-radius: 1.3rem 1.3rem 1.3rem 1.3rem;
+	}
+
+	.white-bg {
+	  background-color: #fff;
+	  border-radius: 1.3rem 0rem 0rem 1.3rem;
+	}
+
+	.modal-img {
+	  display: inline-block;
+	  vertical-align: middle;
+	  position: relative;
+	  top: 30%;
+	  left: 30%;
+	}
+
+	button.close {
+	    padding-right: 10px !important;
+	    padding-left: 10px !important;
+	    padding-top: 3px !important;
+	    padding-bottom: 5px !important;
+	    background-color: #E8237C;
+	    border-radius: 100%;
+	    -webkit-appearance: none;
+	    position: relative;
+	    top: -12%;
+	    left: 9%;
+	}
+
+	.close {
+	    float: right;
+	    font-size: 1.5rem;
+	    font-weight: 700;
+	    line-height: 1;
+	    color: #fff;
+	    text-shadow: 0 1px 0 #fff;
+	    opacity: 1 !important;
+	}
+
+	.white-text {
+	  color: white !important;
+	}
+
+	.modal-dialog {
+        max-width: 500px;
+        margin: 5.75rem auto;
+    }
+
+    .modal-content {
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        width: 100%;
+        pointer-events: auto;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid rgba(0,0,0,.2);
+        border-radius: 1.3rem;
+        outline: 0;
+    }
+
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen
+and (min-width : 321px) {
+
+	.border-right {
+	  border-right: 2px solid lightgrey;
+	}
+
+	.no-spaces {
+	  /*margin-left: 0px !important;
+	  margin-right: 0px !important;
+	  padding-right: 0px !important;
+	  padding-left: 0px !important;*/
+	}
+
+	.blue-bg {
+	  background-color: #3875B2;
+	  border-radius: 0rem 1.3rem 1.3rem 0rem;
+	}
+
+	.blue-bg-row {
+	  background-color: #3875B2;
+	  border-radius: 1.3rem 1.3rem 1.3rem 1.3rem;
+	}
+
+	.white-bg {
+	  background-color: #fff;
+	  border-radius: 1.3rem 0rem 0rem 1.3rem;
+	}
+
+	.modal-img {
+	  display: inline-block;
+	  vertical-align: middle;
+	  position: relative;
+	  top: 30%;
+	  left: 30%;
+	}
+
+	button.close {
+	    padding-right: 10px !important;
+	    padding-left: 10px !important;
+	    padding-top: 3px !important;
+	    padding-bottom: 5px !important;
+	    background-color: #E8237C;
+	    border-radius: 100%;
+	    -webkit-appearance: none;
+	    position: relative;
+	    top: -12%;
+	    left: 9%;
+	}
+
+	.close {
+	    float: right;
+	    font-size: 1.5rem;
+	    font-weight: 700;
+	    line-height: 1;
+	    color: #fff;
+	    text-shadow: 0 1px 0 #fff;
+	    opacity: 1 !important;
+	}
+
+	.white-text {
+	  color: white !important;
+	}
+
+	.modal-dialog {
+        max-width: 500px;
+        margin: 5.75rem auto;
+    }
+
+    .modal-content {
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        width: 100%;
+        pointer-events: auto;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid rgba(0,0,0,.2);
+        border-radius: 1.3rem;
+        outline: 0;
+    }
+
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width : 320px) {
+
+	.border-right {
+	  border-right: 2px solid lightgrey;
+	}
+
+	.no-spaces {
+	  /*margin-left: 0px !important;
+	  margin-right: 0px !important;
+	  padding-right: 0px !important;
+	  padding-left: 0px !important;*/
+	}
+
+	.blue-bg {
+	  background-color: #3875B2;
+	  border-radius: 0rem 1.3rem 1.3rem 0rem;
+	}
+
+	.blue-bg-row {
+	  background-color: #3875B2;
+	  border-radius: 1.3rem 1.3rem 1.3rem 1.3rem;
+	}
+
+	.white-bg {
+	  background-color: #fff;
+	  border-radius: 1.3rem 0rem 0rem 1.3rem;
+	}
+
+	.modal-img {
+	  display: inline-block;
+	  vertical-align: middle;
+	  position: relative;
+	  top: 30%;
+	  left: 30%;
+	}
+
+	button.close {
+	    padding-right: 10px !important;
+	    padding-left: 10px !important;
+	    padding-top: 3px !important;
+	    padding-bottom: 5px !important;
+	    background-color: #E8237C;
+	    border-radius: 100%;
+	    -webkit-appearance: none;
+	    position: relative;
+	    top: -12%;
+	    left: 9%;
+	}
+
+	.close {
+	    float: right;
+	    font-size: 1.5rem;
+	    font-weight: 700;
+	    line-height: 1;
+	    color: #fff;
+	    text-shadow: 0 1px 0 #fff;
+	    opacity: 1 !important;
+	}
+
+	.white-text {
+	  color: white !important;
+	}
+
+	.modal-dialog {
+        max-width: 500px;
+        margin: 5.75rem auto;
+    }
+
+    .modal-content {
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        width: 100%;
+        pointer-events: auto;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid rgba(0,0,0,.2);
+        border-radius: 1.3rem;
+        outline: 0;
+    }
+
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+
+	.border-right {
+	  border-right: 2px solid lightgrey;
+	}
+
+	.no-spaces {
+	  /*margin-left: 0px !important;
+	  margin-right: 0px !important;
+	  padding-right: 0px !important;
+	  padding-left: 0px !important;*/
+	}
+
+	.blue-bg {
+	  background-color: #3875B2;
+	  border-radius: 0rem 1.3rem 1.3rem 0rem;
+	}
+
+	.blue-bg-row {
+	  background-color: #3875B2;
+	  border-radius: 1.3rem 1.3rem 1.3rem 1.3rem;
+	}
+
+	.white-bg {
+	  background-color: #fff;
+	  border-radius: 1.3rem 0rem 0rem 1.3rem;
+	}
+
+	.modal-img {
+	  display: inline-block;
+	  vertical-align: middle;
+	  position: relative;
+	  top: 30%;
+	  left: 30%;
+	}
+
+	button.close {
+	    padding-right: 10px !important;
+	    padding-left: 10px !important;
+	    padding-top: 3px !important;
+	    padding-bottom: 5px !important;
+	    background-color: #E8237C;
+	    border-radius: 100%;
+	    -webkit-appearance: none;
+	    position: relative;
+	    top: -12%;
+	    left: 9%;
+	}
+
+	.close {
+	    float: right;
+	    font-size: 1.5rem;
+	    font-weight: 700;
+	    line-height: 1;
+	    color: #fff;
+	    text-shadow: 0 1px 0 #fff;
+	    opacity: 1 !important;
+	}
+
+	.white-text {
+	  color: white !important;
+	}
+
+	.modal-dialog {
+        max-width: 500px;
+        margin: 5.75rem auto;
+    }
+
+    .modal-content {
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        width: 100%;
+        pointer-events: auto;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid rgba(0,0,0,.2);
+        border-radius: 1.3rem;
+        outline: 0;
+    }
+
+}
+
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+
+	.border-right {
+	  border-right: 2px solid lightgrey;
+	}
+
+	.no-spaces {
+	  /*margin-left: 0px !important;
+	  margin-right: 0px !important;
+	  padding-right: 0px !important;
+	  padding-left: 0px !important;*/
+	}
+
+	.blue-bg {
+	  background-color: #3875B2;
+	  border-radius: 0rem 1.3rem 1.3rem 0rem;
+	}
+
+	.blue-bg-row {
+	  background-color: #3875B2;
+	  border-radius: 1.3rem 1.3rem 1.3rem 1.3rem;
+	}
+
+	.white-bg {
+	  background-color: #fff;
+	  border-radius: 1.3rem 0rem 0rem 1.3rem;
+	}
+
+	.modal-img {
+	  display: inline-block;
+	  vertical-align: middle;
+	  position: relative;
+	  top: 30%;
+	  left: 30%;
+	}
+
+	button.close {
+	    padding-right: 10px !important;
+	    padding-left: 10px !important;
+	    padding-top: 3px !important;
+	    padding-bottom: 5px !important;
+	    background-color: #E8237C;
+	    border-radius: 100%;
+	    -webkit-appearance: none;
+	    position: relative;
+	    top: -12%;
+	    left: 9%;
+	}
+
+	.close {
+	    float: right;
+	    font-size: 1.5rem;
+	    font-weight: 700;
+	    line-height: 1;
+	    color: #fff;
+	    text-shadow: 0 1px 0 #fff;
+	    opacity: 1 !important;
+	}
+
+	.white-text {
+	  color: white !important;
+	}
+
+	.modal-dialog {
+        max-width: 500px;
+        margin: 5.75rem auto;
+    }
+
+    .modal-content {
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        width: 100%;
+        pointer-events: auto;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid rgba(0,0,0,.2);
+        border-radius: 1.3rem;
+        outline: 0;
+    }
+
+}
+
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+
+	.border-right {
+	  border-right: 2px solid lightgrey;
+	}
+
+	.no-spaces {
+	  /*margin-left: 0px !important;
+	  margin-right: 0px !important;
+	  padding-right: 0px !important;
+	  padding-left: 0px !important;*/
+	}
+
+	.blue-bg {
+	  background-color: #3875B2;
+	  border-radius: 0rem 1.3rem 1.3rem 0rem;
+	}
+
+	.blue-bg-row {
+	  background-color: #3875B2;
+	  border-radius: 1.3rem 1.3rem 1.3rem 1.3rem;
+	}
+
+	.white-bg {
+	  background-color: #fff;
+	  border-radius: 1.3rem 0rem 0rem 1.3rem;
+	}
+
+	.modal-img {
+	  display: inline-block;
+	  vertical-align: middle;
+	  position: relative;
+	  top: 30%;
+	  left: 30%;
+	}
+
+	button.close {
+	    padding-right: 10px !important;
+	    padding-left: 10px !important;
+	    padding-top: 3px !important;
+	    padding-bottom: 5px !important;
+	    background-color: #E8237C;
+	    border-radius: 100%;
+	    -webkit-appearance: none;
+	    position: relative;
+	    top: -12%;
+	    left: 12%;
+	}
+
+	.close {
+	    float: right;
+	    font-size: 1.5rem;
+	    font-weight: 700;
+	    line-height: 1;
+	    color: #fff;
+	    text-shadow: 0 1px 0 #fff;
+	    opacity: 1 !important;
+	}
+
+	.white-text {
+	  color: white !important;
+	}
+
+	.modal-dialog {
+        max-width: 500px;
+        margin: 5.75rem auto;
+    }
+
+    .modal-content {
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        width: 724px;
+        pointer-events: auto;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid rgba(0,0,0,.2);
+        border-radius: 1.3rem;
+        outline: 0;
+    }
+
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1224px) {
+
+	.border-right {
+	  border-right: 2px solid lightgrey;
+	}
+
+	.no-spaces {
+	  /*margin-left: 0px !important;
+	  margin-right: 0px !important;
+	  padding-right: 0px !important;
+	  padding-left: 0px !important;*/
+	}
+
+	.blue-bg {
+	  background-color: #3875B2;
+	  border-radius: 0rem 1.3rem 1.3rem 0rem;
+	  min-height: 380px;
+	}
+
+	.blue-bg-row {
+	  background-color: #3875B2;
+	  border-radius: 1.3rem 1.3rem 1.3rem 1.3rem;
+	}
+
+	.white-bg {
+	  background-color: #fff;
+	  border-radius: 1.3rem 0rem 0rem 1.3rem;
+	}
+
+	.modal-img {
+	  display: inline-block;
+	  vertical-align: middle;
+	  position: relative;
+	  top: 30%;
+	  left: 30%;
+	}
+
+	button.close {
+	    padding-right: 10px !important;
+	    padding-left: 10px !important;
+	    padding-top: 3px !important;
+	    padding-bottom: 5px !important;
+	    background-color: #E8237C;
+	    border-radius: 100%;
+	    -webkit-appearance: none;
+	    position: relative;
+	    top: -12%;
+	    left: 9%;
+	}
+
+	.close {
+	    float: right;
+	    font-size: 1.5rem;
+	    font-weight: 700;
+	    line-height: 1;
+	    color: #fff;
+	    text-shadow: 0 1px 0 #fff;
+	    opacity: 1 !important;
+	}
+
+	.white-text {
+	  color: white !important;
+	}
+
+	.modal-dialog {
+        max-width: 500px;
+        margin: 7.75rem auto;
+    }
+
+    .modal-content {
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        width: 850px;
+        min-height: 380px;
+        pointer-events: auto;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid rgba(0,0,0,.2);
+        border-radius: 1.3rem;
+        outline: 0;
+    }
+
+}
+
+/* Large screens ----------- */
+@media only screen
+and (min-width : 1824px) {
+
+	.border-right {
+	  border-right: 2px solid lightgrey;
+	}
+
+	.no-spaces {
+	  /*margin-left: 0px !important;
+	  margin-right: 0px !important;
+	  padding-right: 0px !important;
+	  padding-left: 0px !important;*/
+	}
+
+	.blue-bg {
+	  background-color: #3875B2;
+	  border-radius: 0rem 1.3rem 1.3rem 0rem;
+	}
+
+	.blue-bg-row {
+	  background-color: #3875B2;
+	  border-radius: 1.3rem 1.3rem 1.3rem 1.3rem;
+	}
+
+	.white-bg {
+	  background-color: #fff;
+	  border-radius: 1.3rem 0rem 0rem 1.3rem;
+	}
+
+	.modal-img {
+	  display: inline-block;
+	  vertical-align: middle;
+	  position: relative;
+	  top: 30%;
+	  left: 30%;
+	}
+
+	button.close {
+	    padding-right: 10px !important;
+	    padding-left: 10px !important;
+	    padding-top: 3px !important;
+	    padding-bottom: 5px !important;
+	    background-color: #E8237C;
+	    border-radius: 100%;
+	    -webkit-appearance: none;
+	    position: relative;
+	    top: -12%;
+	    left: 9%;
+	}
+
+	.close {
+	    float: right;
+	    font-size: 1.5rem;
+	    font-weight: 700;
+	    line-height: 1;
+	    color: #fff;
+	    text-shadow: 0 1px 0 #fff;
+	    opacity: 1 !important;
+	}
+
+	.white-text {
+	  color: white !important;
+	}
+
+	.modal-dialog {
+        max-width: 500px;
+        margin: 5.75rem auto;
+    }
+
+    .modal-content {
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        width: 850px;
+        pointer-events: auto;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid rgba(0,0,0,.2);
+        border-radius: 1.3rem;
+        outline: 0;
+    }
+
+}
+
+/* iPhone 5 (portrait & landscape)----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) {
+
+	.border-right {
+	  border-right: 2px solid lightgrey;
+	}
+
+	.no-spaces {
+	  /*margin-left: 0px !important;
+	  margin-right: 0px !important;
+	  padding-right: 0px !important;
+	  padding-left: 0px !important;*/
+	}
+
+	.blue-bg {
+	  background-color: #3875B2;
+	  border-radius: 0rem 1.3rem 1.3rem 0rem;
+	}
+
+	.blue-bg-row {
+	  background-color: #3875B2;
+	  border-radius: 1.3rem 1.3rem 1.3rem 1.3rem;
+	}
+
+	.white-bg {
+	  background-color: #fff;
+	  border-radius: 1.3rem 0rem 0rem 1.3rem;
+	}
+
+	.modal-img {
+	  display: inline-block;
+	  vertical-align: middle;
+	  position: relative;
+	  top: 30%;
+	  left: 30%;
+	}
+
+	button.close {
+	    padding-right: 10px !important;
+	    padding-left: 10px !important;
+	    padding-top: 3px !important;
+	    padding-bottom: 5px !important;
+	    background-color: #E8237C;
+	    border-radius: 100%;
+	    -webkit-appearance: none;
+	    position: relative;
+	    top: -12%;
+	    left: 9%;
+	}
+
+	.close {
+	    float: right;
+	    font-size: 1.5rem;
+	    font-weight: 700;
+	    line-height: 1;
+	    color: #fff;
+	    text-shadow: 0 1px 0 #fff;
+	    opacity: 1 !important;
+	}
+
+	.white-text {
+	  color: white !important;
+	}
+
+	.modal-dialog {
+        max-width: 500px;
+        margin: 5.75rem auto;
+    }
+
+    .modal-content {
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        width: 100%;
+        pointer-events: auto;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid rgba(0,0,0,.2);
+        border-radius: 1.3rem;
+        outline: 0;
+    }
+}
+
+/* iPhone 5 (landscape)----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : landscape) {
+
+	.border-right {
+	  border-right: 2px solid lightgrey;
+	}
+
+	.no-spaces {
+	  /*margin-left: 0px !important;
+	  margin-right: 0px !important;
+	  padding-right: 0px !important;
+	  padding-left: 0px !important;*/
+	}
+
+	.blue-bg {
+	  background-color: #3875B2;
+	  border-radius: 0rem 1.3rem 1.3rem 0rem;
+	}
+
+	.blue-bg-row {
+	  background-color: #3875B2;
+	  border-radius: 1.3rem 1.3rem 1.3rem 1.3rem;
+	}
+
+	.white-bg {
+	  background-color: #fff;
+	  border-radius: 1.3rem 0rem 0rem 1.3rem;
+	}
+
+	.modal-img {
+	  display: inline-block;
+	  vertical-align: middle;
+	  position: relative;
+	  top: 30%;
+	  left: 30%;
+	}
+
+	button.close {
+	    padding-right: 10px !important;
+	    padding-left: 10px !important;
+	    padding-top: 3px !important;
+	    padding-bottom: 5px !important;
+	    background-color: #E8237C;
+	    border-radius: 100%;
+	    -webkit-appearance: none;
+	    position: relative;
+	    top: -12%;
+	    left: 9%;
+	}
+
+	.close {
+	    float: right;
+	    font-size: 1.5rem;
+	    font-weight: 700;
+	    line-height: 1;
+	    color: #fff;
+	    text-shadow: 0 1px 0 #fff;
+	    opacity: 1 !important;
+	}
+
+	.white-text {
+	  color: white !important;
+	}
+
+	.modal-dialog {
+        max-width: 500px;
+        margin: 5.75rem auto;
+    }
+
+    .modal-content {
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        width: 100%;
+        pointer-events: auto;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid rgba(0,0,0,.2);
+        border-radius: 1.3rem;
+        outline: 0;
+    }
+
+}
+
+/* iPhone 5 (portrait)----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : portrait) {
+
+	.border-right {
+	  border-right: 0px solid lightgrey;
+	}
+
+	.no-spaces {
+	  /*margin-left: 0px !important;
+	  margin-right: 0px !important;
+	  padding-right: 0px !important;
+	  padding-left: 0px !important;*/
+	}
+
+	.blue-bg {
+	  background-color: #3875B2;
+	  border-radius: 1.3rem 1.3rem 1.3rem 1.3rem;
+	}
+
+	.blue-bg-row {
+	  background-color: #3875B2;
+	  border-radius: 1.3rem 1.3rem 1.3rem 1.3rem;
+	}
+
+	.white-bg {
+	  background-color: #fff;
+	  border-radius: 1.3rem 1.3rem 0rem 0rem;
+	  height: 150px;
+	}
+
+	.modal-img {
+	  display: inline-block;
+	  vertical-align: middle;
+	  position: relative;
+	  top: 10%;
+	  left: 35%;
+	}
+
+	button.close {
+	    padding-right: 10px !important;
+	    padding-left: 10px !important;
+	    padding-top: 3px !important;
+	    padding-bottom: 5px !important;
+	    background-color: #E8237C;
+	    border-radius: 100%;
+	    -webkit-appearance: none;
+	    position: relative;
+	    top: -33%;
+	    left: 2%;
+	}
+
+	.close {
+	    float: right;
+	    font-size: 1.5rem;
+	    font-weight: 700;
+	    line-height: 1;
+	    color: #fff;
+	    text-shadow: 0 1px 0 #fff;
+	    opacity: 1 !important;
+	}
+
+	.white-text {
+	  color: white !important;
+	}
+
+	.modal-dialog {
+        max-width: 500px;
+        margin: 5.75rem auto;
+    }
+
+    .modal-content {
+        position: relative;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        width: 100%;
+        pointer-events: auto;
+        background-color: #fff;
+        background-clip: padding-box;
+        border: 1px solid rgba(0,0,0,.2);
+        border-radius: 1.3rem;
+        outline: 0;
+    }
+
+}

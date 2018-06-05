@@ -15,7 +15,7 @@ h6 {
 header.masthead {
   position: relative;
   background-color: #343a40;
-  background: url("../assets/icons/google-map-loader.gif") no-repeat center center;
+  /*background: url("../assets/icons/google-map-loader.gif") no-repeat center center;*/
   -webkit-background-size: contain;
   -moz-background-size: contain;
   -o-background-size: contain;
@@ -276,6 +276,11 @@ footer.footer {
     margin: 0 auto;
 }
 
+.artwork-contact {
+  position: relative;
+  bottom: 200px;
+}
+
 .about-heading {
     margin-bottom: 40px !important;
 }
@@ -533,6 +538,20 @@ a.nav-links:hover::before, a.nav-links:focus::before {
       opacity: 0.2;
     }
 
+    .optify-section-rainbow-about {
+        position: absolute;
+        left: 0;
+        top: -140%;
+        width: 50px;
+        opacity: 0.2;
+    }
+
+    .artwork-contact {
+      position: relative;
+      bottom: 20px;'
+      opacity: 0.6;'
+    }
+
     .top{
       border-top: 1px solid white !important;
 
@@ -568,6 +587,20 @@ a.nav-links:hover::before, a.nav-links:focus::before {
 
     .optify-section-rainbow {
       opacity: 0.2;
+    }
+
+    .optify-section-rainbow-about {
+        position: absolute;
+        left: 0;
+        top: -140%;
+        width: 50px !important;
+        opacity: 0.2;
+    }
+
+    .artwork-contact {
+      position: relative;
+      bottom: 20px;'
+      opacity: 0.6;'
     }
 
     .top{
@@ -651,79 +684,4 @@ a.nav-links:hover::before, a.nav-links:focus::before {
 
 .gm-style-iw {
     color: black;
-}
-
-.border-right {
-  border-right: 2px solid lightgrey;
-}
-
-.no-spaces {
-  /*margin-left: 0px !important;
-  margin-right: 0px !important;
-  padding-right: 0px !important;
-  padding-left: 0px !important;*/
-}
-
-.blue-bg {
-  background-color: #3875B2;
-}
-
-.modal-img {
-  display: inline-block;
-  vertical-align: middle;
-  position: relative;
-  top: 30%;
-  left: 30%;
-}
-
-button.close {
-    padding-right: 10px !important;
-    padding-left: 10px !important;
-    padding-top: 3px !important;
-    padding-bottom: 5px !important;
-    background-color: #E8237C;
-    border-radius: 100%;
-    -webkit-appearance: none;
-    position: relative;
-    top: -15%;
-    left: 11%;
-}
-
-@media (min-width: 576px) {
-    .modal-dialog {
-        max-width: 500px;
-        margin: 5.75rem auto;
-    }
-}
-
-.close {
-    float: right;
-    font-size: 1.5rem;
-    font-weight: 700;
-    line-height: 1;
-    color: #fff;
-    text-shadow: 0 1px 0 #fff;
-    opacity: 1 !important;
-}
-
-.white-text {
-  color: white !important;
-}
-
-.modal-content {
-    position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    width: 850px;
-    pointer-events: auto;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid rgba(0,0,0,.2);
-    border-radius: .3rem;
-    outline: 0;
 }
