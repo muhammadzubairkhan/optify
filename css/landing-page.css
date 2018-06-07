@@ -447,6 +447,11 @@ a.nav-links:hover::before, a.nav-links:focus::before {
     transform: scale(1, 1) !important;
 }
 
+.optify-logo {
+  width: 138px;
+  height: 56px;
+}
+
 /*------------------------------------*\
   Preloader
 \*------------------------------------*/
