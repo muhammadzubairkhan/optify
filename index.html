@@ -41,7 +41,7 @@
     <nav class="navbar navbar-default for-mobile">
       <div class="container-fluid">
         <div class="navbar-header">
-          <a class="navbar-brand" href="index.html"><img src="assets/logo/optify-logo.png"></a>
+          <a class="navbar-brand" href="index.html"><img class="optify-logo" src="assets/logo/optify-logo.png"></a>
 
           <div class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" onclick="myFunction(this)">
             <div class="bar1"></div>
@@ -84,6 +84,22 @@
         </div>
       </div>
     </header>
+
+    <section class="absolute-section">
+      <form>
+        <select class="selectpicker form-control" onchange="openCity(this.value);">
+          <option value="karachi">Karachi</option>
+          <option value="lahore">Lahore</option>
+          <option value="rawalpindi">Rawalpindi</option>
+          <option value="gujranwala">Gujranwala</option>
+          <option value="sialkot">Sialkot</option>
+          <option value="faisalabad">Faisalabad</option>
+          <option value="islamabad">Islamabad</option>
+          <option value="peshawar">Peshawar</option>'
+          <option value="hyderabad">Hyderabad</option>'
+        </select>
+      </form>
+    </section>
 
     <!-- Cities Section -->
     <section class="bg-light text-center cities-section">
@@ -286,312 +302,490 @@
 
     <script>
 
-    function myMap() {
+    function openCity(cityName) {
 
-      var locations_karachi = [
-          ['Arts Council of Pakistan', 24.852999, 67.021015, 27],
-          ['LuckyOne Mall', 24.932297, 67.087807, 26],
-          ['Dolmen Mall Tariq Road', 24.876857, 67.062809, 25],
-          ['Dolmen Mall Hyderi', 24.935676, 67.040728, 24],
-          ['Chai Wala', 24.786991, 67.056909, 23],
-          ['Street Kitchen', 24.787847, 67.057681, 22],
-          ['Bahadur Shah Zafar Road', 24.882959, 67.067765, 21],
-          ['Caboki in Karachi', 24.823966, 67.036636, 20],
-          ['Timberland', 24.802457, 67.030194, 19],
-          ['Gulshan 13-B', 24.906642, 67.078817, 18],
-          ['Johar Branch, Block 11', 24.920728, 67.135112, 17],
-          ['Nazimabad Branch, Block-B', 24.926161, 67.039624, 16],
-          ['Rashid Minhas Branch, Block 10 A', 24.910425, 67.106220, 15],
-          ['Head Office branch - Tipu Sultan Rd', 24.865715, 67.078121, 14],
-          ['Marine Branch, Block 8', 24.831609, 67.036460, 13],
-          ['Atrium Mall Branch, Saddar', 24.859648, 67.031311, 12],
-          ['Ziauddin Branch', 24.812775, 67.015817, 11],
-          ['Karsaz Branch, Karsaz Service Rd E', 24.884087, 67.090504, 10],
-          ['DHA Phase 2 Branch', 24.843301, 67.057174, 9],
-          ['DHA Phase 2 Branch', 24.843301, 67.057174, 8],
-          ['Hyperstar Clifton', 24.801972, 67.031305, 7],
-          ['NMC', 24.846914, 67.056546, 6],
-          ['South City Hospital', 24.814212, 67.022914, 5],
-          ['Chenone Park towers', 24.814342, 67.027848, 4],
-          ['Chenone Tariq Road', 24.877254, 67.063466, 3],
-          ['Chenone Luckyone', 24.932136, 67.087663, 2],
-          ['Arena Family Recreational Park', 24.887888, 67.090450, 1] //27
-      ];
+        // alert(cityName);
 
-      var locations_lahore = [
-          ['Emporium Mall Lahore', 31.467505, 74.266092, 3],
-          ['Chenone Gulberg', 24.786991, 67.056909, 2],
-          ['Chenone DHA Lahore', 31.472038, 74.377424, 1] //3
-      ];
+        if(cityName == 'karachi') {
+          $('#myMap').show();
+          myMap(cityName);
+        }
 
-      var locations_rawalpindi = [
-          ['Chenone Adamjee Rd Rawalpindi', 33.594595, 73.056446, 1] //1
-      ];
+        if(cityName == 'lahore') {
+          $('#myMap').show();
+          myMap(cityName);
+        }
 
-      var locations_gujranwala = [
-          ['Chenone Gujranwala', 32.592372, 74.080146, 1] //1
-      ];
+        if(cityName == 'rawalpindi') {
+          $('#myMap').show();
+          myMap(cityName);
+        }
 
-      var locations_sialkot = [
-          ['Chenone Sialkot', 32.514704, 74.574994, 1] //1
-      ];
+        if(cityName == 'gujranwala') {
+          $('#myMap').show();
+          myMap(cityName);
+        }
 
-      var locations_faisalabad = [
-          ['Chenone Faislabad', 31.411863, 73.105912, 1] //1
-      ];
+        if(cityName == 'sialkot') {
+          $('#myMap').show();
+          myMap(cityName);
+        }
 
-      var locations_islamabad = [
-          ['Chenone Islamabad', 33.722536, 73.060512, 1] //1
-      ];
+        if(cityName == 'faisalabad') {
+          $('#myMap').show();
+          myMap(cityName);
+        }
 
-      var locations_peshawar = [
-          ['Chenone Peshawar', 34.003383, 71.545789, 1],
-          ['Chenone Uni Rd Peshawar', 34.004758, 71.545848, 1] //1
-      ];
+        if(cityName == 'islamabad') {
+          $('#myMap').show();
+          myMap(cityName);
+        }
 
-      var locations_hyderabad = [
-          ['Chenone Hyderabad', 25.377144, 68.338694, 1] //1
-      ];
+        if(cityName == 'peshawar') {
+          $('#myMap').show();
+          myMap(cityName);
+        }
+
+        if(cityName == 'hyderabad') {
+          $('#myMap').show();
+          myMap(cityName);
+        }
+    }
+
+
+    function myMap(cityName) {
+
+      var lat, long;
+      var locations;
+      var locations_length;
+
+      if(!cityName) {
+        cityName = 'karachi';
+      }
+
+      lat = '24.8491936';
+      long = '67.0012626';
+
+      if(cityName == 'karachi') {
+
+          var locations = [
+              ['Arts Council of Pakistan', 24.852999, 67.021015, 27],
+              ['LuckyOne Mall', 24.932297, 67.087807, 26],
+              ['Dolmen Mall Tariq Road', 24.876857, 67.062809, 25],
+              ['Dolmen Mall Hyderi', 24.935676, 67.040728, 24],
+              ['Chai Wala', 24.786991, 67.056909, 23],
+              ['Street Kitchen', 24.787847, 67.057681, 22],
+              ['Bahadur Shah Zafar Road', 24.882959, 67.067765, 21],
+              ['Caboki in Karachi', 24.823966, 67.036636, 20],
+              ['Timberland', 24.802457, 67.030194, 19],
+              ['Gulshan 13-B', 24.906642, 67.078817, 18],
+              ['Johar Branch, Block 11', 24.920728, 67.135112, 17],
+              ['Nazimabad Branch, Block-B', 24.926161, 67.039624, 16],
+              ['Rashid Minhas Branch, Block 10 A', 24.910425, 67.106220, 15],
+              ['Head Office branch - Tipu Sultan Rd', 24.865715, 67.078121, 14],
+              ['Marine Branch, Block 8', 24.831609, 67.036460, 13],
+              ['Atrium Mall Branch, Saddar', 24.859648, 67.031311, 12],
+              ['Ziauddin Branch', 24.812775, 67.015817, 11],
+              ['Karsaz Branch, Karsaz Service Rd E', 24.884087, 67.090504, 10],
+              ['DHA Phase 2 Branch', 24.843301, 67.057174, 9],
+              ['DHA Phase 2 Branch', 24.843301, 67.057174, 8],
+              ['Hyperstar Clifton', 24.801972, 67.031305, 7],
+              ['NMC', 24.846914, 67.056546, 6],
+              ['South City Hospital', 24.814212, 67.022914, 5],
+              ['Chenone Park towers', 24.814342, 67.027848, 4],
+              ['Chenone Tariq Road', 24.877254, 67.063466, 3],
+              ['Chenone Luckyone', 24.932136, 67.087663, 2],
+              ['Arena Family Recreational Park', 24.887888, 67.090450, 1] //27
+          ];
+
+          locations_length = locations.length;
+
+          // alert(locations_length);
+
+          lat = '24.8491936';
+          long = '67.0012626';
+
+          // alert(cityName);
+
+      }
+
+      if(cityName == 'lahore') {
+
+          var locations = [
+              ['Emporium Mall Lahore', 31.467505, 74.266092, 3],
+              ['Chenone Gulberg', 24.786991, 67.056909, 2],
+              ['Chenone DHA Lahore', 31.472038, 74.377424, 1] //3
+          ];
+
+          locations_length = locations.length;
+
+          // alert(locations_length);
+
+          lat = '31.5670339';
+          long = '74.3104669';
+
+          // alert(cityName);
+
+      }
+
+      if(cityName == 'rawalpindi') {
+
+          var locations = [
+              ['Chenone Adamjee Rd Rawalpindi', 33.594595, 73.056446, 1] //1
+          ];
+
+          locations_length = locations.length;
+
+          // alert(locations_length);
+
+          lat = '33.594595';
+          long = '73.056446';
+
+          // alert(cityName);
+
+      }
+
+      if(cityName == 'gujranwala') {
+
+          var locations = [
+              ['Chenone Gujranwala', 32.592372, 74.080146, 1] //1
+          ];
+
+          locations_length = locations.length;
+
+          // alert(locations_length);
+
+          lat = '32.592372';
+          long = '74.080146';
+
+          // alert(cityName);
+
+      }
+
+      if(cityName == 'sialkot') {
+
+          var locations = [
+              ['Chenone Sialkot', 32.514704, 74.574994, 1] //1
+          ];
+
+          locations_length = locations.length;
+
+          // alert(locations_length);
+
+          lat = '32.514704';
+          long = '74.574994';
+
+          // alert(cityName);
+
+      }
+
+      if(cityName == 'faisalabad') {
+
+          var locations = [
+              ['Chenone Faislabad', 31.411863, 73.105912, 1] //1
+          ];
+
+          locations_length = locations.length;
+
+          // alert(locations_length);
+
+          lat = '31.411863';
+          long = '73.105912';
+
+          // alert(cityName);
+
+      }
+
+      if(cityName == 'islamabad') {
+
+          var locations = [
+              ['Chenone Islamabad', 33.722536, 73.060512, 1] //1
+          ];
+
+          locations_length = locations.length;
+
+          // alert(locations_length);
+
+          lat = '33.722536';
+          long = '73.060512';
+
+          // alert(cityName);
+
+      }
+
+      if(cityName == 'peshawar') {
+
+          var locations = [
+              ['Chenone Peshawar', 34.003383, 71.545789, 2],
+              ['Chenone Uni Rd Peshawar', 34.004758, 71.545848, 1] //1
+          ];
+
+          locations_length = locations.length;
+
+          // alert(locations_length);
+
+          lat = '34.003383';
+          long = '71.545789';
+
+          // alert(cityName);
+
+      }
+
+      if(cityName == 'hyderabad') {
+
+          var locations = [
+              ['Chenone Hyderabad', 25.377144, 68.338694, 1] //1
+          ];
+
+          locations_length = locations.length;
+
+          // alert(locations_length);
+
+          lat = '25.377144';
+          long = '68.338694';
+
+          // alert(cityName);
+
+      }
 
         var map = new google.maps.Map(document.getElementById('myMap'), {
           zoom: 11,
-          center: new google.maps.LatLng(24.852999, 67.021015),
+          center: new google.maps.LatLng(lat, long),
           mapTypeId: google.maps.MapTypeId.ROADMAP,
 
             styles: [
-  {
-    "elementType": "geometry",
-    "stylers": [
-      {
-        "color": "#1d2c4d"
-      }
-    ]
-  },
-  {
-    "elementType": "labels.text.fill",
-    "stylers": [
-      {
-        "color": "#8ec3b9"
-      }
-    ]
-  },
-  {
-    "elementType": "labels.text.stroke",
-    "stylers": [
-      {
-        "color": "#1a3646"
-      }
-    ]
-  },
-  {
-    "featureType": "administrative.country",
-    "elementType": "geometry.stroke",
-    "stylers": [
-      {
-        "color": "#4b6878"
-      }
-    ]
-  },
-  {
-    "featureType": "administrative.land_parcel",
-    "elementType": "labels.text.fill",
-    "stylers": [
-      {
-        "color": "#64779e"
-      }
-    ]
-  },
-  {
-    "featureType": "administrative.province",
-    "elementType": "geometry.stroke",
-    "stylers": [
-      {
-        "color": "#4b6878"
-      }
-    ]
-  },
-  {
-    "featureType": "landscape.man_made",
-    "elementType": "geometry.stroke",
-    "stylers": [
-      {
-        "color": "#334e87"
-      }
-    ]
-  },
-  {
-    "featureType": "landscape.natural",
-    "elementType": "geometry",
-    "stylers": [
-      {
-        "color": "#023e58"
-      }
-    ]
-  },
-  {
-    "featureType": "poi",
-    "elementType": "geometry",
-    "stylers": [
-      {
-        "color": "#283d6a"
-      }
-    ]
-  },
-  {
-    "featureType": "poi",
-    "elementType": "labels.text.fill",
-    "stylers": [
-      {
-        "color": "#6f9ba5"
-      }
-    ]
-  },
-  {
-    "featureType": "poi",
-    "elementType": "labels.text.stroke",
-    "stylers": [
-      {
-        "color": "#1d2c4d"
-      }
-    ]
-  },
-  {
-    "featureType": "poi.park",
-    "elementType": "geometry.fill",
-    "stylers": [
-      {
-        "color": "#023e58"
-      }
-    ]
-  },
-  {
-    "featureType": "poi.park",
-    "elementType": "labels.text.fill",
-    "stylers": [
-      {
-        "color": "#3C7680"
-      }
-    ]
-  },
-  {
-    "featureType": "road",
-    "elementType": "geometry",
-    "stylers": [
-      {
-        "color": "#304a7d"
-      }
-    ]
-  },
-  {
-    "featureType": "road",
-    "elementType": "labels.text.fill",
-    "stylers": [
-      {
-        "color": "#98a5be"
-      }
-    ]
-  },
-  {
-    "featureType": "road",
-    "elementType": "labels.text.stroke",
-    "stylers": [
-      {
-        "color": "#1d2c4d"
-      }
-    ]
-  },
-  {
-    "featureType": "road.highway",
-    "elementType": "geometry",
-    "stylers": [
-      {
-        "color": "#2c6675"
-      }
-    ]
-  },
-  {
-    "featureType": "road.highway",
-    "elementType": "geometry.stroke",
-    "stylers": [
-      {
-        "color": "#255763"
-      }
-    ]
-  },
-  {
-    "featureType": "road.highway",
-    "elementType": "labels.text.fill",
-    "stylers": [
-      {
-        "color": "#b0d5ce"
-      }
-    ]
-  },
-  {
-    "featureType": "road.highway",
-    "elementType": "labels.text.stroke",
-    "stylers": [
-      {
-        "color": "#023e58"
-      }
-    ]
-  },
-  {
-    "featureType": "transit",
-    "elementType": "labels.text.fill",
-    "stylers": [
-      {
-        "color": "#98a5be"
-      }
-    ]
-  },
-  {
-    "featureType": "transit",
-    "elementType": "labels.text.stroke",
-    "stylers": [
-      {
-        "color": "#1d2c4d"
-      }
-    ]
-  },
-  {
-    "featureType": "transit.line",
-    "elementType": "geometry.fill",
-    "stylers": [
-      {
-        "color": "#283d6a"
-      }
-    ]
-  },
-  {
-    "featureType": "transit.station",
-    "elementType": "geometry",
-    "stylers": [
-      {
-        "color": "#3a4762"
-      }
-    ]
-  },
-  {
-    "featureType": "water",
-    "elementType": "geometry",
-    "stylers": [
-      {
-        "color": "#0e1626"
-      }
-    ]
-  },
-  {
-    "featureType": "water",
-    "elementType": "labels.text.fill",
-    "stylers": [
-      {
-        "color": "#4e6d70"
-      }
-    ]
-  }
-]
-
+            {
+              "elementType": "geometry",
+              "stylers": [
+                {
+                  "color": "#1d2c4d"
+                }
+              ]
+            },
+            {
+              "elementType": "labels.text.fill",
+              "stylers": [
+                {
+                  "color": "#8ec3b9"
+                }
+              ]
+            },
+            {
+              "elementType": "labels.text.stroke",
+              "stylers": [
+                {
+                  "color": "#1a3646"
+                }
+              ]
+            },
+            {
+              "featureType": "administrative.country",
+              "elementType": "geometry.stroke",
+              "stylers": [
+                {
+                  "color": "#4b6878"
+                }
+              ]
+            },
+            {
+              "featureType": "administrative.land_parcel",
+              "elementType": "labels.text.fill",
+              "stylers": [
+                {
+                  "color": "#64779e"
+                }
+              ]
+            },
+            {
+              "featureType": "administrative.province",
+              "elementType": "geometry.stroke",
+              "stylers": [
+                {
+                  "color": "#4b6878"
+                }
+              ]
+            },
+            {
+              "featureType": "landscape.man_made",
+              "elementType": "geometry.stroke",
+              "stylers": [
+                {
+                  "color": "#334e87"
+                }
+              ]
+            },
+            {
+              "featureType": "landscape.natural",
+              "elementType": "geometry",
+              "stylers": [
+                {
+                  "color": "#023e58"
+                }
+              ]
+            },
+            {
+              "featureType": "poi",
+              "elementType": "geometry",
+              "stylers": [
+                {
+                  "color": "#283d6a"
+                }
+              ]
+            },
+            {
+              "featureType": "poi",
+              "elementType": "labels.text.fill",
+              "stylers": [
+                {
+                  "color": "#6f9ba5"
+                }
+              ]
+            },
+            {
+              "featureType": "poi",
+              "elementType": "labels.text.stroke",
+              "stylers": [
+                {
+                  "color": "#1d2c4d"
+                }
+              ]
+            },
+            {
+              "featureType": "poi.park",
+              "elementType": "geometry.fill",
+              "stylers": [
+                {
+                  "color": "#023e58"
+                }
+              ]
+            },
+            {
+              "featureType": "poi.park",
+              "elementType": "labels.text.fill",
+              "stylers": [
+                {
+                  "color": "#3C7680"
+                }
+              ]
+            },
+            {
+              "featureType": "road",
+              "elementType": "geometry",
+              "stylers": [
+                {
+                  "color": "#304a7d"
+                }
+              ]
+            },
+            {
+              "featureType": "road",
+              "elementType": "labels.text.fill",
+              "stylers": [
+                {
+                  "color": "#98a5be"
+                }
+              ]
+            },
+            {
+              "featureType": "road",
+              "elementType": "labels.text.stroke",
+              "stylers": [
+                {
+                  "color": "#1d2c4d"
+                }
+              ]
+            },
+            {
+              "featureType": "road.highway",
+              "elementType": "geometry",
+              "stylers": [
+                {
+                  "color": "#2c6675"
+                }
+              ]
+            },
+            {
+              "featureType": "road.highway",
+              "elementType": "geometry.stroke",
+              "stylers": [
+                {
+                  "color": "#255763"
+                }
+              ]
+            },
+            {
+              "featureType": "road.highway",
+              "elementType": "labels.text.fill",
+              "stylers": [
+                {
+                  "color": "#b0d5ce"
+                }
+              ]
+            },
+            {
+              "featureType": "road.highway",
+              "elementType": "labels.text.stroke",
+              "stylers": [
+                {
+                  "color": "#023e58"
+                }
+              ]
+            },
+            {
+              "featureType": "transit",
+              "elementType": "labels.text.fill",
+              "stylers": [
+                {
+                  "color": "#98a5be"
+                }
+              ]
+            },
+            {
+              "featureType": "transit",
+              "elementType": "labels.text.stroke",
+              "stylers": [
+                {
+                  "color": "#1d2c4d"
+                }
+              ]
+            },
+            {
+              "featureType": "transit.line",
+              "elementType": "geometry.fill",
+              "stylers": [
+                {
+                  "color": "#283d6a"
+                }
+              ]
+            },
+            {
+              "featureType": "transit.station",
+              "elementType": "geometry",
+              "stylers": [
+                {
+                  "color": "#3a4762"
+                }
+              ]
+            },
+            {
+              "featureType": "water",
+              "elementType": "geometry",
+              "stylers": [
+                {
+                  "color": "#0e1626"
+                }
+              ]
+            },
+            {
+              "featureType": "water",
+              "elementType": "labels.text.fill",
+              "stylers": [
+                {
+                  "color": "#4e6d70"
+                }
+              ]
+            }
+          ]
         });
 
         var infowindow = new google.maps.InfoWindow();
@@ -605,9 +799,9 @@
             anchor: new google.maps.Point(0, 0) // anchor
         };
 
-        for (i = 0; i < locations_karachi.length; i++) {
+        for (i = 0; i < locations.length; i++) {
           marker = new google.maps.Marker({
-            position: new google.maps.LatLng(locations_karachi[i][1], locations_karachi[i][2]),
+            position: new google.maps.LatLng(locations[i][1], locations[i][2]),
             map: map,
             icon: icon,
             label: {color: "black"}
@@ -615,7 +809,7 @@
 
         google.maps.event.addListener(marker, 'click', (function(marker, i) {
           return function() {
-            infowindow.setContent(locations_karachi[i][0]);
+            infowindow.setContent(locations[i][0]);
             infowindow.open(map, marker);
           }
         })(marker, i));

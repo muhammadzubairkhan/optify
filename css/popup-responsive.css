@@ -80,6 +80,12 @@ and (max-device-width : 480px) {
         outline: 0;
     }
 
+    .absolute-section {
+	  position: absolute;
+	  top: 12%;
+	  left: 120px;
+	}
+
 }
 
 /* Smartphones (landscape) ----------- */
@@ -169,6 +175,12 @@ and (min-width : 321px) {
         border-radius: 1.3rem;
         outline: 0;
     }
+
+    .absolute-section {
+	  position: absolute;
+	  top: 12%;
+	  left: 120px;
+	}
 
 }
 
@@ -260,6 +272,12 @@ and (max-width : 320px) {
         outline: 0;
     }
 
+    .absolute-section {
+	  position: absolute;
+	  top: 12%;
+	  left: 120px;
+	}
+
 }
 
 /* iPads (portrait and landscape) ----------- */
@@ -350,6 +368,12 @@ and (max-device-width : 1024px) {
         border-radius: 1.3rem;
         outline: 0;
     }
+
+    .absolute-section {
+	  position: absolute;
+	  top: 12%;
+	  left: 120px;
+	}
 
 }
 
@@ -443,6 +467,12 @@ and (orientation : landscape) {
         outline: 0;
     }
 
+    .absolute-section {
+	  position: absolute;
+	  top: 12%;
+	  left: 120px;
+	}
+
 }
 
 /* iPads (portrait) ----------- */
@@ -534,6 +564,16 @@ and (orientation : portrait) {
         border-radius: 1.3rem;
         outline: 0;
     }
+
+    .absolute-section {
+	  position: absolute;
+	  top: 90px;
+	  left: 120px;
+	}
+
+	.cities-section {
+		display: none;
+	}
 
 }
 
@@ -627,6 +667,12 @@ and (min-width : 1224px) {
         outline: 0;
     }
 
+    .absolute-section {
+	  position: absolute;
+	  top: 12%;
+	  left: 120px;
+	}
+
 }
 
 /* Large screens ----------- */
@@ -716,6 +762,12 @@ and (min-width : 1824px) {
         border-radius: 1.3rem;
         outline: 0;
     }
+
+    .absolute-section {
+	  position: absolute;
+	  top: 12%;
+	  left: 120px;
+	}
 
 }
 
@@ -807,6 +859,13 @@ and (max-device-width : 568px) {
         border-radius: 1.3rem;
         outline: 0;
     }
+
+    .absolute-section {
+	  position: absolute;
+	  top: 12%;
+	  left: 120px;
+	}
+
 }
 
 /* iPhone 5 (landscape)----------- */
@@ -898,6 +957,12 @@ and (orientation : landscape) {
         border-radius: 1.3rem;
         outline: 0;
     }
+
+    .absolute-section {
+	  position: absolute;
+	  top: 12%;
+	  left: 120px;
+	}
 
 }
 
@@ -991,5 +1056,15 @@ and (orientation : portrait) {
         border-radius: 1.3rem;
         outline: 0;
     }
+
+    .absolute-section {
+	  position: relative;
+	  top: 14%;
+	  left: 0%;
+	}
+
+	.cities-section {
+		display: none;
+	}
 
 }
