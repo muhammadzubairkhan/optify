@@ -693,6 +693,16 @@ a.nav-links:hover::before, a.nav-links:focus::before {
 
 }
 
+@media screen and (width: 1024px) {
+
+    .absolute-section {
+      position: absolute;
+      top: 6% !important;
+      left: 120px;
+    }
+
+}
+
 .gm-style-iw {
     color: black;
 }
